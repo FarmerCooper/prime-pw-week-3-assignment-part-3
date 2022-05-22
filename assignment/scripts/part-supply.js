@@ -32,8 +32,19 @@ console.log('5. Adding 25 to supplyChanges.');
 //    - if it is a positive number (greater than 0), log 'Added x parts.' 
 //    - if the value is 0, log 'No Change.'
 //    - if the value is negative, format the log as 'Removed x parts.' 
-console.log('6. Showing supplyChanges...');
 
+i = 0;
+console.log('6. Showing supplyChanges...', supplyChanges);
+
+for (let i=0; i<supplyChanges.length; i++) {
+    if (supplyChanges[i] > 0) {
+        console.log('Added', supplyChanges[i], "parts.");
+    } else if (supplyChanges[i] === 0){
+        console.log('No change.');
+    }if (supplyChanges[i] < 0){
+        console.log('Removed', supplyChanges[i], 'parts.');
+    }
+}
 
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
